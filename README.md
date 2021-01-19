@@ -4,7 +4,7 @@ Project name: proj-html-vuejs (MaxCoach site reproduction).
 
 1) BASIC STRUCTURE CREATION IN HTML AND INSERTION OF CLASSES AND IDS FOR THE USE OF CSS.
 
-- I will create the basic website structure in html paying attention to semantic tags like <header>, <nav>, <main>, <section>,  <footer>.
+- I will create the basic website structure in html paying attention to semantic tags like header, nav, main, section, footer.
 - I will insert ids and classes where they are needed to simplify the use of CSS.
 
 2) INSERTION OF THE CSS. WORKING ON THE WEBSITE'S AESTHETICS.
