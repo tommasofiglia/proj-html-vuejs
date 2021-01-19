@@ -1,0 +1,112 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  letter-spacing: -0.7px;
+}
+
+/* Utility classes */
+.d-flex{
+  display: flex;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.justify-space-around{
+  justify-content: space-around;
+}
+
+.justify-space-between{
+  justify-content: space-between;
+}
+
+.almost-black{
+  color: #333434;
+}
+
+.mr-10{
+  margin-right: 10px;
+}
+
+.mr-15{
+  margin-right: 15px;
+}
+
+.mr-20{
+  margin-right: 20px;
+}
+
+/* Commons */
+ul{
+list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus{
+  color: inherit;
+}
+
+/* Navbar */
+nav{
+  height: 80px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.links{
+  width: 40%;
+}
+
+#logo{
+  width: 20%;
+  text-align: center;
+}
+
+.right_navbar{
+  width: 40%;
+  text-align: right;
+}
+
+.links ul li{
+  margin-left: 30px;
+}
+
+#logo img{
+  width: 165px;
+}
+
+nav .right_navbar{
+  margin-right: 30px;
+}
+
+.right_navbar input{
+  height: 50px;
+  width: 280px;
+  border: 0;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 40px;
+  background-image: url('../img/search-icon.svg');
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-position: 95% 55%;
+}
+
+.right_navbar input:focus {
+  outline: 0;
+}
+
+/* Jumbotron */
+.jumbotron{
+  height: 670px;
+  background-image: url('../img/home-3-hero-bg.jpg');
+  position: relative;
+}
