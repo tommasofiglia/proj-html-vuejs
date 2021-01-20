@@ -54,103 +54,107 @@
 
       <!-- Main's start-->
       <main>
-        <!-- Section about MaxCoach's features -->
-        <section class="features">
 
-          <div class="container d-flex flex-column">
+        <section class="bg_white_to_grey">
 
-            <!-- Section with "Learn about" -->
-            <div class="d-flex justify-space-between section-learn-about">
+          <!-- Section about MaxCoach's features -->
+          <section class="features">
 
-              <div class="learn_about">
-                <span class="grey uppercase fw-500">everything in <span class="fw-600">maxcoach</span></span>
-                <h2 class="almost-black">Learn about our <span class="aqua-green fw-400">Work Culture</span> at MaxCoach</h2>
-                <p class="grey mt-20 fw-500 long-text">Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
-                <p class="grey mt-35 fw-500 final_text"> Have questions? <a href="" class="aqua-green fw-600"> Get Free Guide <i class="fas fa-arrow-right"></i></a></p>
+            <div class="container d-flex flex-column">
+
+              <!-- Section with "Learn about" -->
+              <div class="d-flex justify-space-between section-learn-about">
+
+                <div class="learn_about">
+                  <span class="grey uppercase fw-500">everything in <span class="fw-600">maxcoach</span></span>
+                  <h2 class="almost-black">Learn about our <span class="aqua-green fw-400">Work Culture</span> at MaxCoach</h2>
+                  <p class="grey mt-20 fw-500 long-text">Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
+                  <p class="grey mt-35 fw-500 final_text"> Have questions? <a href="" class="aqua-green fw-600"> Get Free Guide <i class="fas fa-arrow-right"></i></a></p>
+                </div>
+
+                <img src="assets/img/learn-about.jpg" alt="">
+
               </div>
 
-              <img src="assets/img/learn-about.jpg" alt="">
+              <!-- Section with datas about lessons -->
+              <div class="data d-flex justify-space-around data_lessons">
+
+                <div>
+                  <h2 class="aqua-green">129+</h2>
+                  <p class="mt-15 almost-black">enrolled learners</p>
+                </div>
+
+                <div>
+                  <h2 class="aqua-green">80</h2>
+                  <p class="mt-15 almost-black">finished sessions</p>
+                </div>
+
+                <div>
+                  <h2 class="aqua-green">4&percnt;</h2>
+                  <p class="mt-15 almost-black">satisfation rate</p>
+                </div>
+              </div>
+
+              <!-- Section with "upgrade your  skills" -->
+              <div class="upgrade_skills d-flex">
+
+                <div class="youtube_prev position-r">
+                  <div class="container_img">
+                    <img src="assets/img/youtube_background.jpg" alt="">
+                  </div>
+                  <img src="assets/img/icon-youtube-play.png" alt="" class="youtube_button">
+                </div>
+
+                <div class="upgrade_life">
+                  <span class="grey uppercase fw-500 mt-50">how we work</span>
+                  <h2 class="almost-black capitalize">upgrade your skills <span class="aqua-green fw-400">upgrade your life</span></h2>
+                  <p class="grey mt-20 fw-500 long-text">Opening up more opportunities in front of yout to get the ticket to more enjoyable door in life. Getting equipped with new skills for new sets of insights into your career. MaxCoach accompany learners in every stage of learning.</p>
+                  <p class="mt-35 fw-600 final_text"> <a href="" class=" fw-600"> Download free guidebook <i class="fas fa-arrow-right"></i></a></p>
+                </div>
+              </div>
 
             </div>
 
-            <!-- Section with datas about lessons -->
-            <div class="data d-flex justify-space-around data_lessons">
+          </section>
 
-              <div>
-                <h2 class="aqua-green">129+</h2>
-                <p class="mt-15 almost-black">enrolled learners</p>
+          <!-- Section about Courses (With Cards about courses) -->
+          <section class="courses mt-105 container">
+            <h4 class="grey uppercase fw-500 text-center">join maxcoach at best</h4>
+            <h2 class="almost-black capitalize mt-30 mb-40 text-center">latest online <span class="aqua-green fw-400">courses</span></h2>
+
+            <div class="container_courses_carousel" id="slider">
+              <div class="courses_carousel">
+
+                <div class="card mt-35" v-for="course in courses">
+
+                  <div class="container_img">
+                    <img :src="'assets/img/'+course.img" alt="">
+                  </div>
+
+                  <div class="info_card">
+                    <h3 class="aqua-green"><span>&dollar;{{course.price}}</span>.00</h3>
+                    <h4 class="mt-20 mb-20">{{course.title}}</h4>
+                    <p class="grey fw-500 mb-20"><i class="far fa-file-alt"></i> {{course.lessons}} Lessons <i class="far fa-user"></i> {{course.students}} Students</p>
+                  </div>
+
+                </div>
+
               </div>
 
-              <div>
-                <h2 class="aqua-green">80</h2>
-                <p class="mt-15 almost-black">finished sessions</p>
-              </div>
+            </div>
 
-              <div>
-                <h2 class="aqua-green">4&percnt;</h2>
-                <p class="mt-15 almost-black">satisfation rate</p>
+            <div class="navigation_dots">
+              <div class="dots_container mb-50" v-for="(point,index) in counterDots">
+                <a @click="slideTo(index)"><i :class="index === positionDot ? 'dot_active': ''" class="fas fa-circle"></i></a>
               </div>
             </div>
 
-            <!-- Section with "upgrade your  skills" -->
-            <div class="upgrade_skills d-flex">
-
-              <div class="youtube_prev position-r">
-                <img src="assets/img/youtube_background.jpg" alt="">
-                <img src="assets/img/icon-youtube-play.png" alt="" class="youtube_button">
-              </div>
-
-              <div class="upgrade_life">
-                <span class="grey uppercase fw-500 mt-50">how we work</span>
-                <h2 class="almost-black capitalize">upgrade your skills <span class="aqua-green fw-400">upgrade your life</span></h2>
-                <p class="grey mt-20 fw-500 long-text">Opening up more opportunities in front of yout to get the ticket to more enjoyable door in life. Getting equipped with new skills for new sets of insights into your career. MaxCoach accompany learners in every stage of learning.</p>
-                <p class="mt-35 fw-600 final_text"> <a href="" class=" fw-600"> Download free guidebook <i class="fas fa-arrow-right"></i></a></p>
-              </div>
+            <div class="final_course_message text-center">
+              <p class="almost-black">Control your personal preference settings to get notified about appropriate courses. <a href="">View all courses <i class="fas fa-arrow-right"></i></a></p>
             </div>
-
-          </div>
+          </section>
 
         </section>
-
-        <!-- Section about Courses -->
-        <section class="courses mt-105 container">
-          <h4 class="grey uppercase fw-500 text-center">join maxcoach at best</h4>
-          <h2 class="almost-black capitalize mt-30 mb-75 text-center">latest online <span class="aqua-green fw-400">courses</span></h2>
-
-          <div class="container_courses_carousel">
-
-            <div class="courses_carousel">
-
-              <div class="card">
-
-              </div>
-              <div class="card">
-
-              </div>
-              <div class="card">
-
-              </div>
-              <div class="card">
-
-              </div>
-              <div class="card">
-
-              </div>
-              <div class="card">
-
-              </div>
-              <div class="card">
-
-              </div>
-              <div class="card">
-
-              </div>
-            </div>
-
-          </div>
-
-        </section>
-
         <!-- Section about reviews -->
         <section class="reviews">
 

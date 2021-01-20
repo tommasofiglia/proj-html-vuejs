@@ -40,7 +40,6 @@
   justify-content: space-between;
 }
 
-
 .mr-10{
   margin-right: 10px;
 }
@@ -79,6 +78,18 @@
 
 .mt-105{
   margin-top: 105px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+.mb-40{
+  margin-bottom: 40px;
+}
+
+.mb-50{
+  margin-bottom: 50px;
 }
 
 .mb-75{
@@ -242,6 +253,12 @@ nav{
 
 /* Main */
 
+/* Section with background gradient from white to grey */
+
+.bg_white_to_grey{
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 100%);
+}
+
 /* Features section */
 
 .features{
@@ -299,12 +316,31 @@ nav{
   letter-spacing: 1.3px;
 }
 
+.youtube_prev{
+  cursor: pointer;
+}
+
+.youtube_prev .container_img{
+  overflow: hidden;
+  height: 450px;
+  border-radius: 7px;
+}
+
+.youtube_prev img:first-child{
+  height: 450px;
+  border-radius: 7px;
+  transition: transform 1.3s ease;
+}
+
+.youtube_prev:hover img:first-child{
+  transform: scale(1.1);
+}
+
 .youtube_prev .youtube_button{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
-  cursor: pointer;
 }
 
 .upgrade_life{
@@ -315,10 +351,6 @@ nav{
   display: inline;
 }
 
-.youtube_prev img:first-child{
-  height: 450px;
-  border-radius: 7px;
-}
 
 /* Courses section */
 
@@ -337,18 +369,128 @@ nav{
 
 .courses_carousel{
   width: max-content;
-  margin-bottom: 100px;
-  overflow-x: auto;
+  margin-bottom: 22px;
+}
+
+.container_courses_carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.container_courses_carousel{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .courses_carousel .card{
   display: inline-block;
-  width: 340px;
-  height: 100px;
-  background-color: red;
-  margin-right:20px;
-  margin-left: 20px;
+  width: 350px;
+  background-color: white;
+  margin-right:15px;
+  margin-left: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.8s ease;
 }
+
+
+.courses_carousel .card img{
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  transition: all 1.2s ease;
+}
+
+.courses_carousel .card .container_img{
+  overflow: hidden;
+  height: 217.3px;
+}
+
+.courses_carousel .card:hover img{
+  transform: scale(1.1);
+}
+
+.courses_carousel .card:hover{
+  -webkit-box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.6);
+  box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.6);
+}
+
+.courses_carousel .card h4:hover{
+  color: #1fad95;
+}
+
+.info_card{
+  padding: 25px;
+}
+
+.info_card h3 span{
+  font-size: 22px;
+}
+
+.info_card h3{
+  font-size: 15px;
+}
+
+.info_card h4{
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+.info_card p{
+  font-size: 14px;
+}
+
+.info_card i:last-child{
+  margin-left: 25px;
+}
+
+.info_card i{
+  margin-right: 6px;
+}
+
+.navigation_dots{
+  width: max-content;
+  margin: auto;
+  font-size: 10px;
+  color: #d8d8d8;
+}
+
+.dot_active{
+  color: black;
+  font-size: 14px;
+}
+.navigation_dots i{
+  cursor: pointer;
+  margin: auto;
+}
+
+.navigation_dots i:hover{
+  font-size: 14px;
+  color: black;
+}
+
+.dots_container{
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+
+.final_course_message{
+  width: 490px;
+  margin: auto;
+  line-height: 1.8em;
+}
+
+.final_course_message a{
+  color: black;
+  font-weight: 600;
+}
+
+.final_course_message a i{
+  margin-left: 5px;
+}
+
 /********************************
 MEDIAQUERIES
 *******************************/
