@@ -28,6 +28,10 @@
   align-items: center;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-space-around{
   justify-content: space-around;
 }
@@ -77,6 +81,10 @@
   margin-top: 105px;
 }
 
+.mb-75{
+  margin-bottom: 75px;
+}
+
 .almost-black{
   color: #333333;
 }
@@ -99,6 +107,10 @@
 
 .capitalize{
   text-transform: capitalize;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .fw-400{
@@ -308,6 +320,35 @@ nav{
   border-radius: 7px;
 }
 
+/* Courses section */
+
+.courses h4{
+  font-size: 14px;
+}
+
+.courses h2{
+  font-size: 40px;
+}
+
+.container_courses_carousel{
+  width: 100%;
+  overflow-x: auto;
+}
+
+.courses_carousel{
+  width: max-content;
+  margin-bottom: 100px;
+  overflow-x: auto;
+}
+
+.courses_carousel .card{
+  display: inline-block;
+  width: 340px;
+  height: 100px;
+  background-color: red;
+  margin-right:20px;
+  margin-left: 20px;
+}
 /********************************
 MEDIAQUERIES
 *******************************/
