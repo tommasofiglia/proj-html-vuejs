@@ -23,7 +23,7 @@
 
           <div class="links">
             <ul class="d-flex">
-              <li v-for="link in navLinks"> <a href="">{{link.title}} <i class="fas fa-chevron-down"></i></a></li>
+              <li v-for="(link, index) in navLinks"> <a href="">{{link.title}}<i class="fas fa-chevron-down"></i></a></li>
 
             </ul>
           </div>
@@ -60,13 +60,13 @@
           <div class="container d-flex flex-column">
 
             <!-- Section with "Learn about" -->
-            <div class="d-flex justify-space-between">
+            <div class="d-flex justify-space-between section-learn-about">
 
               <div class="learn_about">
-                <span class="grey uppercase">everything in <strong>maxcoach</strong></span>
+                <span class="grey uppercase fw-500">everything in <span class="fw-600">maxcoach</span></span>
                 <h2 class="almost-black">Learn about our <span class="aqua-green fw-400">Work Culture</span> at MaxCoach</h2>
-                <p class="grey mt-20 fw-500">Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
-                <p class="grey mt-35 fw-500"> Have questions? <a href="" class="aqua-green fw-600"> Get Free Guide <i class="fas fa-arrow-right"></i></a></p>
+                <p class="grey mt-20 fw-500 long-text">Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
+                <p class="grey mt-35 fw-500 final_text"> Have questions? <a href="" class="aqua-green fw-600"> Get Free Guide <i class="fas fa-arrow-right"></i></a></p>
               </div>
 
               <img src="assets/img/learn-about.jpg" alt="">
@@ -89,6 +89,22 @@
               <div>
                 <h2 class="aqua-green">4&percnt;</h2>
                 <p class="mt-15 almost-black">satisfation rate</p>
+              </div>
+            </div>
+
+            <!-- Section with "upgrade your  skills" -->
+            <div class="upgrade_skills d-flex">
+
+              <div class="youtube_prev position-r">
+                <img src="assets/img/youtube_background.jpg" alt="">
+                <img src="assets/img/icon-youtube-play.png" alt="" class="youtube_button">
+              </div>
+
+              <div class="upgrade_life">
+                <span class="grey uppercase fw-500 mt-50">how we work</span>
+                <h2 class="almost-black capitalize">upgrade your skills <span class="aqua-green fw-400">upgrade your life</span></h2>
+                <p class="grey mt-20 fw-500 long-text">Opening up more opportunities in front of yout to get the ticket to more enjoyable door in life. Getting equipped with new skills for new sets of insights into your career. MaxCoach accompany learners in every stage of learning.</p>
+                <p class="mt-35 fw-600 final_text"> <a href="" class=" fw-600"> Download free guidebook <i class="fas fa-arrow-right"></i></a></p>
               </div>
             </div>
 

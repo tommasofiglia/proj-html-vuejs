@@ -12,6 +12,10 @@
   margin: auto;
 }
 
+.position-r{
+  position: relative;
+}
+
 .d-flex{
   display: flex;
 }
@@ -65,6 +69,14 @@
   margin-top: 35px;
 }
 
+.mt-50{
+  margin-top: 50px;
+}
+
+.mt-105{
+  margin-top: 105px;
+}
+
 .almost-black{
   color: #333333;
 }
@@ -83,6 +95,10 @@
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
 }
 
 .fw-400{
@@ -144,7 +160,7 @@ nav{
 
 .links ul li i{
   font-size: 10px;
-  margin-left: 3px;
+  margin-left: 6px;
 }
 
 #logo img{
@@ -220,42 +236,44 @@ nav{
   padding-top: 200px;
 }
 
-.features img{
+.section-learn-about img{
   border-radius: 7px;
+  height: 360px;
 }
 
 .learn_about{
   padding-right: 210px;
 }
 
-.learn_about > span , .learn_about > span strong{
+.learn_about > span , .learn_about > span span , .upgrade_life span{
   display: inline-block;
   font-size: 13px;
   margin-bottom: 20px;
   letter-spacing: 1.5px;
 }
 
-.learn_about h2{
+.learn_about h2, .upgrade_life h2 , .upgrade_life h2 span{
   font-size: 40px;
+  line-height: 1.4em;
 }
 
-.learn_about p{
+.learn_about .long-text , .upgrade_life .long-text{
   font-size: 13px;
   line-height: 1.5em;
 }
 
-.learn_about p i{
+.learn_about .final_text , .upgrade_life .final_text{
+  font-size: 13px;
+}
+
+.learn_about p i , .upgrade_life p i{
   margin-left: 5px;
 }
 
 .data_lessons{
   width: 75%;
-  margin: auto;
-}
-
-.data_lessons{
+  margin: 105px auto;
   text-align: center;
-  margin-top: 105px;
 }
 
 .data_lessons h2{
@@ -267,6 +285,27 @@ nav{
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1.3px;
+}
+
+.youtube_prev .youtube_button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  cursor: pointer;
+}
+
+.upgrade_life{
+  padding-left: 100px;
+}
+
+.upgrade_life h2 span{
+  display: inline;
+}
+
+.youtube_prev img:first-child{
+  height: 450px;
+  border-radius: 7px;
 }
 
 /********************************
