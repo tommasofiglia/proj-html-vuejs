@@ -16,6 +16,10 @@
   display: flex;
 }
 
+.flex-column{
+  flex-direction: column;
+}
+
 .align-items-center{
   align-items: center;
 }
@@ -41,8 +45,28 @@
   margin-right: 20px;
 }
 
+.mt-10{
+  margin-top: 10px;
+}
+
+.mt-15{
+  margin-top: 15px;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.mt-30{
+  margin-top: 30px;
+}
+
+.mt-35{
+  margin-top: 35px;
+}
+
 .almost-black{
-  color: #333434;
+  color: #333333;
 }
 
 .white{
@@ -51,6 +75,26 @@
 
 .aqua-green{
   color: #1fad95;
+}
+
+.grey{
+  color: #696969;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.fw-400{
+  font-weight: 400;
+}
+
+.fw-500{
+  font-weight: 500;
+}
+
+.fw-600{
+  font-weight: 600;
 }
 
 /* Commons */
@@ -78,29 +122,33 @@ nav{
 }
 
 .links{
-  width: 40%;
+  width: 42%;
 }
 
 #logo{
-  width: 20%;
+  width: 16%;
   text-align: center;
 }
 
 .right_navbar{
-  width: 40%;
+  width: 42%;
+  margin-right: 30px;
   text-align: right;
 }
 
 .links ul li{
   margin-left: 30px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.links ul li i{
+  font-size: 10px;
+  margin-left: 3px;
 }
 
 #logo img{
   width: 165px;
-}
-
-nav .right_navbar{
-  margin-right: 30px;
 }
 
 .right_navbar input{
@@ -162,4 +210,80 @@ nav .right_navbar{
 .jumbotron button:hover{
   background-color: #1fad95;
   color: white;
+}
+
+/* Main */
+
+/* Features section */
+
+.features{
+  padding-top: 200px;
+}
+
+.features img{
+  border-radius: 7px;
+}
+
+.learn_about{
+  padding-right: 210px;
+}
+
+.learn_about > span , .learn_about > span strong{
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+.learn_about h2{
+  font-size: 40px;
+}
+
+.learn_about p{
+  font-size: 13px;
+  line-height: 1.5em;
+}
+
+.learn_about p i{
+  margin-left: 5px;
+}
+
+.data_lessons{
+  width: 75%;
+  margin: auto;
+}
+
+.data_lessons{
+  text-align: center;
+  margin-top: 105px;
+}
+
+.data_lessons h2{
+  font-size: 40px;
+}
+
+.data_lessons p {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+}
+
+/********************************
+MEDIAQUERIES
+*******************************/
+
+@media all and (max-width: 1440px) {
+  .jumbotron{
+    background-position: 50% 0;
+  }
+
+  .right_navbar{
+    margin-right: 22px;
+  }
+
+  .links ul li{
+    margin-left: 22px;
+    font-size: 13px;
+  }
 }

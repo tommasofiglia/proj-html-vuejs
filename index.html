@@ -23,12 +23,8 @@
 
           <div class="links">
             <ul class="d-flex">
-              <li> <a href="">home</a></li>
-              <li> <a href="">pages</a></li>
-              <li> <a href="">courses</a></li>
-              <li> <a href="">Features</a></li>
-              <li> <a href="">blog</a></li>
-              <li> <a href="">shop</a></li>
+              <li v-for="link in navLinks"> <a href="">{{link.title}} <i class="fas fa-chevron-down"></i></a></li>
+
             </ul>
           </div>
 
@@ -60,6 +56,43 @@
       <main>
         <!-- Section about MaxCoach's features -->
         <section class="features">
+
+          <div class="container d-flex flex-column">
+
+            <!-- Section with "Learn about" -->
+            <div class="d-flex justify-space-between">
+
+              <div class="learn_about">
+                <span class="grey uppercase">everything in <strong>maxcoach</strong></span>
+                <h2 class="almost-black">Learn about our <span class="aqua-green fw-400">Work Culture</span> at MaxCoach</h2>
+                <p class="grey mt-20 fw-500">Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
+                <p class="grey mt-35 fw-500"> Have questions? <a href="" class="aqua-green fw-600"> Get Free Guide <i class="fas fa-arrow-right"></i></a></p>
+              </div>
+
+              <img src="assets/img/learn-about.jpg" alt="">
+
+            </div>
+
+            <!-- Section with datas about lessons -->
+            <div class="data d-flex justify-space-around data_lessons">
+
+              <div>
+                <h2 class="aqua-green">129+</h2>
+                <p class="mt-15 almost-black">enrolled learners</p>
+              </div>
+
+              <div>
+                <h2 class="aqua-green">80</h2>
+                <p class="mt-15 almost-black">finished sessions</p>
+              </div>
+
+              <div>
+                <h2 class="aqua-green">4&percnt;</h2>
+                <p class="mt-15 almost-black">satisfation rate</p>
+              </div>
+            </div>
+
+          </div>
 
         </section>
 
