@@ -229,10 +229,12 @@
           <div class="newsletter_container">
             <h2 class="almost-black fs-40 capitalize text-center mb-30 pt-75">subscribe <span class="aqua-green fw-400">newsletters</span></h2>
             <h4 class="grey fw-500 mb-50 text-center">Enter your email address to register to our newsletter subscription delivered on a regular basis!</h4>
+
             <div class="d-flex pb-100">
               <input type="text" placeholder="Enter your email" class="almost-black">
               <div class="button fw-600 capitalize text-center fs-14">subscribe</div>
             </div>
+
           </div>
 
         </section>
@@ -242,6 +244,53 @@
 
       <!-- Footer's start -->
       <footer>
+        <div class="container pt-75 pb-85">
+          <div class="d-flex">
+
+            <div class="first_row inline-block">
+              <ul>
+                <li class="clear_grey fs-13 mb-20" v-for="info in addressInfos">
+                  {{info}}
+                </li>
+              </ul>
+
+              <div class="social clear_grey mt-30">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+              </div>
+
+            </div>
+
+            <div class="second_row inline-block">
+              <ul>
+                <li class="clear_grey mb-20" v-for="link in secondRowLinks">
+                  <a href="" class="fs-13">{{link}}</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="third_row inline-block">
+              <ul>
+                <li class="clear_grey mb-20" v-for="link in thirdRowLinks">
+                  <a href="" class="fs-13">{{link}}</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="fourth_row inline-block">
+              <ul>
+                <li class="clear_grey mb-20" v-for="link in fourthRowLinks">
+                  <a href="" class="fs-13">{{link}}</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <p class="clear_grey text-center fs-13 fw-600 pb-50">&copy 2020 Maxcoach. All Rights Reserved </p>
 
       </footer>
       <!-- Footer's end -->

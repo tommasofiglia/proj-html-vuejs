@@ -144,6 +144,10 @@
   padding-top: 110px;
 }
 
+.pb-50{
+  padding-bottom: 50px;
+}
+
 .pb-85{
   padding-bottom: 85px;
 }
@@ -154,6 +158,10 @@
 
 .pb-115{
   padding-bottom: 115px;
+}
+
+.fs-13{
+  font-size: 13px;
 }
 
 .fs-14{
@@ -182,6 +190,10 @@
 
 .grey{
   color: #696969;
+}
+
+.clear_grey{
+  color: #ababab;
 }
 
 .uppercase{
@@ -760,7 +772,67 @@ nav{
   background-color: #3f3a64;
 }
 
-/* Section with newsletters */
+/* Footer */
+
+footer{
+  background-color: #171621;
+}
+
+footer .first_row{
+  width: 55%;
+}
+
+footer .second_row , footer .third_row , footer .fourth_row{
+  width: calc(45%/3);
+}
+
+footer .first_row li:first-of-type {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer .first_row li:last-of-type{
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer .first_row li:last-of-type:hover{
+  color: #1fad95;
+}
+
+footer .second_row li:first-of-type a , footer .third_row li:first-of-type a , footer .fourth_row li:first-of-type a{
+  cursor: context-menu;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer .third_row ul{
+  padding-top: 20px;
+}
+
+footer .second_row li:hover:not(first-of-type) , footer .third_row li:hover:not(first-of-type) , footer .fourth_row li:hover:not(first-of-type){
+  color: #1fad95;
+}
+
+footer .second_row li , footer .third_row li , footer .fourth_row li{
+  transition: color 0.3s ease;
+  width: max-content;
+}
+
+footer .social a{
+  font-size: 25px;
+  margin-right: 28px;
+  transition: color 0.4s ease;
+}
+
+footer .social a:hover{
+  color: white;
+}
+
+
+
 /********************************
 MEDIAQUERIES
 *******************************/
