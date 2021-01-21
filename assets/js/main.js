@@ -73,24 +73,67 @@ let app = new Vue({
         img: "course2.jpg"
       }
     ],
+    reviews:[
+      {
+        title: "Professional team of specialists and passionate mentors at reach",
+        text: "I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+        img: "avatar1.jpg",
+        name: "Madley Pondor",
+        work: "IT Specialist"
+      },
+      {
+        title: "High level of efficiency and scientific teaching methods",
+        text: "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
+        img: "avatar2.jpg",
+        name: "Mina Hollace",
+        work: "Freelancer"
+      },
+      {
+        title: "The MaxCoach team works really hard to ensure high level of quality",
+        text: "I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to adopt.",
+        img: "avatar3.jpg",
+        name: "Luvic Dubble",
+        work: "Private Tutor"
+      }
+    ],
     counterDots: "",
-    positionDot: 0
+    positionDotHorizontal: 0,
+    positionDotVertical: 0
   },
   methods:{
-    slideTo(index){
-      this.positionDot = index;
-      console.log(this.positionDot);
-      if (this.positionDot == 0) {
-        document.getElementById('slider').scrollTo({
+    slideHorizontal(index, id){
+
+      this.positionDotHorizontal = index;
+
+      if (this.positionDotHorizontal == 0) {
+        document.getElementById(id).scrollTo({
           left: 0,
           behavior: 'smooth'
         });
       } else {
-        document.getElementById('slider').scrollTo({
-          left: (this.positionDot*380),
+        document.getElementById(id).scrollTo({
+          left: (this.positionDotHorizontal*380),
           behavior: 'smooth'
         });
       };
+
+    },
+    slideVertical(index, id){
+
+      this.positionDotVertical = index;
+
+      if (this.positionDotVertical == 0) {
+        document.getElementById(id).scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      } else {
+        document.getElementById(id).scrollTo({
+          top: (this.positionDotVertical*380),
+          behavior: 'smooth'
+        });
+      };
+      
     }
   },
   mounted(){

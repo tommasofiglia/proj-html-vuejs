@@ -55,7 +55,7 @@
       <!-- Main's start-->
       <main>
 
-        <section class="bg_white_to_grey">
+        <section class="bg_white_to_grey pb-85">
 
           <!-- Section about MaxCoach's features -->
           <section class="features">
@@ -122,7 +122,7 @@
             <h4 class="grey uppercase fw-500 text-center">join maxcoach at best</h4>
             <h2 class="almost-black capitalize mt-30 mb-40 text-center">latest online <span class="aqua-green fw-400">courses</span></h2>
 
-            <div class="container_courses_carousel" id="slider">
+            <div class="container_courses_carousel" id="slider_horizontal">
               <div class="courses_carousel">
 
                 <div class="card mt-35" v-for="course in courses">
@@ -145,7 +145,7 @@
 
             <div class="navigation_dots">
               <div class="dots_container mb-50" v-for="(point,index) in counterDots">
-                <a @click="slideTo(index)"><i :class="index === positionDot ? 'dot_active': ''" class="fas fa-circle"></i></a>
+                <a @click="slideHorizontal(index, 'slider_horizontal')"><i :class="index === positionDotHorizontal ? 'dot_active': ''" class="fas fa-circle"></i></a>
               </div>
             </div>
 
@@ -156,8 +156,34 @@
 
         </section>
         <!-- Section about reviews -->
-        <section class="reviews">
+        <section class="reviews container d-flex pt-85">
 
+          <div class="why_people mt-150">
+            <h4 class="grey uppercase fw-500 mb-30">testimonials</h4>
+            <h2 class="almost-black fs-40">Why Do People <span class="aqua-green fw-400">*Hearts*</span> Us?</h2>
+            <p class="grey mt-20 fw-500 long-text">Seeking for verbals of our service quality? Find them here. Everything is transparent and straightforward for your sense of jusitifcation.</p>
+            <p class="mt-35 fw-600 final_text"> <a href="" class=" fw-600 fs-14"> View All <i class="fas fa-arrow-right"></i></a></p>
+          </div>
+
+          <div class="review_cards mt-100" id="slider_vertical">
+            <div class="card" v-for="(review,index) in reviews">
+              <h4>{{review.title}}</h4>
+              <p class="long-text grey mt-20 fw-500">{{review.text}}</p>
+              <div class="contact d-flex">
+                <img :src="'assets/img/' + review.img" alt="" class="mt-20">
+                <div class="contact_data">
+                  <div class="mb-10 uppercase fs-14 fw-600 almost-black">{{review.name}}</div>
+                  <div class="fs-14">&sol; {{review.work}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider_vertical_dots">
+            <div class="dot_container d-flex justify-center align-items-center" v-for="(dot,index) in reviews">
+              <i class="fas fa-circle" @click="slideVertical(index, 'slider_vertical')" :class="index === positionDotVertical ? 'dot_active': ''"></i>
+            </div>
+          </div>
         </section>
 
         <!-- Section about the free guide -->

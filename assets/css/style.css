@@ -76,12 +76,28 @@
   margin-top: 50px;
 }
 
+.mt-100{
+  margin-top: 100px;
+}
+
 .mt-105{
   margin-top: 105px;
 }
 
+.mt-150{
+  margin-top: 150px;
+}
+
+.mb-10{
+  margin-bottom: 10px;
+}
+
 .mb-20{
   margin-bottom: 20px;
+}
+
+.mb-30{
+  margin-bottom: 30px;
 }
 
 .mb-40{
@@ -94,6 +110,26 @@
 
 .mb-75{
   margin-bottom: 75px;
+}
+
+.mb-85{
+  margin-bottom: 85px;
+}
+
+.pt-85{
+  padding-top: 85px;
+}
+
+.pb-85{
+  padding-bottom: 85px;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+
+.fs-40{
+  font-size: 40px;
 }
 
 .almost-black{
@@ -148,6 +184,11 @@ a{
 
 a:focus{
   color: inherit;
+}
+
+.long-text{
+  font-size: 13px;
+  line-height: 1.5em;
 }
 
 /********************************************
@@ -286,11 +327,6 @@ nav{
   line-height: 1.4em;
 }
 
-.learn_about .long-text , .upgrade_life .long-text{
-  font-size: 13px;
-  line-height: 1.5em;
-}
-
 .learn_about .final_text , .upgrade_life .final_text{
   font-size: 13px;
 }
@@ -350,7 +386,6 @@ nav{
 .upgrade_life h2 span{
   display: inline;
 }
-
 
 /* Courses section */
 
@@ -490,6 +525,85 @@ nav{
 .final_course_message a i{
   margin-left: 5px;
 }
+
+/* Section with reviews */
+
+.why_people{
+  width: 40%;
+  height: 300px;
+  padding-right: 70px;
+}
+
+.why_people h4{
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.review_cards{
+  width: 55%;
+  height: 360px;
+  border-radius: 7px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: 200px;
+}
+
+.review_cards .card{
+  border-radius: 7px;
+  width: 95%;
+  height: 330px;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  padding: 40px 50px;
+  -webkit-box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.6);
+  box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.6);
+}
+
+.review_cards .card:last-of-type{
+  margin-bottom: 15px;
+}
+
+
+.review_cards .card p , .review_cards .card h4{
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+.review_cards .card img{
+  width: 70px;
+  border-radius: 50%;
+}
+
+.review_cards .card .contact_data{
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+.slider_vertical_dots{
+  width: 5%;
+  height: 120px;
+  margin-top: 220px;
+}
+
+.slider_vertical_dots .dot_container{
+  height: 33.3%;
+}
+
+.dot_container {
+  font-size: 12px;
+  color: #d8d8d8;
+}
+
+.dot_container i:hover{
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+}
+
+
 
 /********************************
 MEDIAQUERIES
