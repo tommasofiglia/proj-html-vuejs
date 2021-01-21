@@ -19,26 +19,26 @@
       <header>
 
         <!-- Website's navbar -->
-        <nav class="navbar d-flex align-items-center">
+        <nav class="navbar">
+          <div class="navbar-container d-flex align-items-center">
+            <div class="links">
+              <ul class="d-flex">
 
-          <div class="links">
-            <ul class="d-flex">
+                <li v-for="(link, index) in navLinks"> <a href="" class="fw-500">{{link.title}}<i class="fas fa-chevron-down"></i></a></li>
 
-              <li v-for="(link, index) in navLinks"> <a href="" class="fw-500">{{link.title}}<i class="fas fa-chevron-down"></i></a></li>
+              </ul>
+            </div>
 
-            </ul>
+            <a href="#" id="logo">
+              <img src="assets/img/dark-logo.png" alt="">
+            </a>
+
+            <div class="right_navbar">
+              <a href="" class="mr-20"><i class="fas fa-shopping-cart"></i></a>
+              <a href="" class="mr-15"><i class="far fa-user-circle"></i></a>
+              <input type="text" name="" value="" placeholder="Search...">
+            </div>
           </div>
-
-          <a href="#" id="logo">
-            <img src="assets/img/dark-logo.png" alt="">
-          </a>
-
-          <div class="right_navbar">
-            <a href="" class="mr-20"><i class="fas fa-shopping-cart"></i></a>
-            <a href="" class="mr-15"><i class="far fa-user-circle"></i></a>
-            <input type="text" name="" value="" placeholder="Search...">
-          </div>
-
         </nav>
 
         <!-- Website's jumbotron -->
@@ -62,7 +62,6 @@
           <section class="features">
 
             <div class="container d-flex flex-column position-r">
-              <img src="assets/img/about_us.jpg" alt="" class="img_over_features">
 
               <!-- Section with "Learn about" -->
               <div class="d-flex justify-space-between section-learn-about">
@@ -115,6 +114,7 @@
                 </div>
               </div>
 
+              <img src="assets/img/about_us.jpg" alt="" class="img_over_features">
             </div>
 
           </section>

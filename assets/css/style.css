@@ -244,7 +244,19 @@ a:focus{
 
 /* Navbar */
 nav{
+  background-color: white;
   height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  -webkit-box-shadow: 1px 8px 16px -1px rgba(0,0,0,0.10);
+  -moz-box-shadow: 1px 8px 16px -1px rgba(0,0,0,0.10);
+  box-shadow: 1px 8px 16px -1px rgba(0,0,0,0.10)
+}
+
+.navbar-container{
+  height: 100%;
   max-width: 1600px;
   margin: auto;
 }
@@ -310,6 +322,7 @@ nav{
 /* Jumbotron */
 .jumbotron{
   height: 670px;
+  margin-top: 80px;
   background-image: url('../img/home-3-hero-bg.jpg');
   background-repeat: no-repeat;
   position: relative;
@@ -369,7 +382,7 @@ nav{
   position: absolute;
   width: 190px;
   border-radius: 7px;
-  left: 92%;
+  left: 90%;
   top: -8%;
   z-index: 1;
 }
@@ -856,8 +869,6 @@ footer .social a{
 footer .social a:hover{
   color: white;
 }
-
-
 
 /********************************
 MEDIAQUERIES
