@@ -275,6 +275,14 @@ nav{
   margin-left: 6px;
 }
 
+.links ul li a{
+  transition: color 0.3s ease;
+}
+
+.links ul li a:hover{
+  color: #1fad95;
+}
+
 #logo img{
   width: 165px;
 }
@@ -335,11 +343,16 @@ nav{
   font-size: 14px;
   font-weight: 600;
   margin-top: 30px;
+  transition: background-color 0.4s ease;
 }
 
 .jumbotron button:hover{
   background-color: #1fad95;
   color: white;
+}
+
+.jumbotron button i{
+  margin-left: 5px;
 }
 
 /* Main */
@@ -591,6 +604,10 @@ nav{
 .why_people h4{
   font-size: 13px;
   letter-spacing: 1.5px;
+}
+
+.why_people p i{
+  margin-left: 5px;
 }
 
 .review_cards{
