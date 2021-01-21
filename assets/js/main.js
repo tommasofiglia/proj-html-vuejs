@@ -96,6 +96,29 @@ let app = new Vue({
         work: "Private Tutor"
       }
     ],
+    blogsArticles:[
+      {
+        img: "artist1.jpeg",
+        blogTheme: "artist",
+        title: "brush strokes energize trees in paintings",
+        date: "May 15, 2020",
+        views: "688"
+      },
+      {
+        img: "artist2.jpg",
+        blogTheme: "artist",
+        title: "pocket-sized notebooks hold miniature paintings",
+        date: "May 15, 2020",
+        views: "603"
+      },
+      {
+        img: "artist3.jpg",
+        blogTheme: "artist",
+        title: "connection between self-portraits and identity",
+        date: "May 15, 2020",
+        views: "397"
+      }
+    ],
     counterDots: "",
     positionDotHorizontal: 0,
     positionDotVertical: 0
@@ -133,7 +156,7 @@ let app = new Vue({
           behavior: 'smooth'
         });
       };
-      
+
     }
   },
   mounted(){

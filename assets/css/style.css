@@ -40,12 +40,20 @@
   justify-content: space-between;
 }
 
+.mr-7{
+  margin-right: 7px;
+}
+
 .mr-10{
   margin-right: 10px;
 }
 
 .mr-15{
   margin-right: 15px;
+}
+
+.ml-30{
+  margin-left: 30px;
 }
 
 .mr-20{
@@ -96,6 +104,10 @@
   margin-bottom: 10px;
 }
 
+.mb-15{
+  margin-bottom: 15px;
+}
+
 .mb-20{
   margin-bottom: 20px;
 }
@@ -124,8 +136,16 @@
   padding-top: 85px;
 }
 
+.pt-110{
+  padding-top: 110px;
+}
+
 .pb-85{
   padding-bottom: 85px;
+}
+
+.pb-115{
+  padding-bottom: 115px;
 }
 
 .fs-14{
@@ -134,6 +154,10 @@
 
 .fs-40{
   font-size: 40px;
+}
+
+.letter-1-5{
+  letter-spacing: 1.5px;
 }
 
 .almost-black{
@@ -437,7 +461,7 @@ nav{
   width: 100%;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  transition: all 1.2s ease;
+  transition: all 1.4s ease;
 }
 
 .courses_carousel .card .container_img{
@@ -457,6 +481,10 @@ nav{
 
 .courses_carousel .card h4:hover{
   color: #1fad95;
+}
+
+.courses_carousel .card h4{
+  transition: color 0.3s ease;
 }
 
 .info_card{
@@ -632,6 +660,47 @@ nav{
   background-color: #3f3a64;
 }
 
+/* Section with blogs articles*/
+
+.our_blogs{
+  background-color: #f8f8f8;
+}
+
+.our_blogs .card{
+  width: 370px;
+  height: 500px;
+  margin-right: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.our_blogs .img_container{
+  height: 237px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.our_blogs .card:hover img{
+  transform: scale(1.1);
+}
+
+.our_blogs .card img{
+  width: 100%;
+  border-radius: 7px;
+  transition: transform 1.4s ease;
+}
+
+.our_blogs .card h3:hover{
+  color: #1fad95;
+}
+
+.our_blogs .card h3{
+  transition: color 0.3s ease;
+}
+
+.our_blogs .card span{
+  font-size: 13px;
+}
 /********************************
 MEDIAQUERIES
 *******************************/

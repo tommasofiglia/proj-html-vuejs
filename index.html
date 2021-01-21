@@ -187,19 +187,39 @@
         </section>
 
         <!-- Section about the free guide -->
-        <section class="free_guide container d-flex">
+        <section class="free_guide pb-115 container d-flex">
           <img src="assets/img/team-image.png" alt="">
           <div class="transform_you mt-90">
-            <h4 class="grey uppercase fw-500 mb-30">everything in <span class="fw-600">MaxCoach</span></h4>
+            <h4 class="grey uppercase fw-500 mb-30 letter-1-5 fs-14">everything in <span class="fw-600">MaxCoach</span></h4>
             <h2 class="almost-black fs-40 capitalize">we're here to <span class="aqua-green fw-400">transform</span> you!</h2>
             <p class="grey mt-20 fw-500 long-text">As learners, people can enjoy great companionship from MaxCoach mentors and educators. We can help you develop and grow at your best.</p>
             <button class="capitalize fw-600">get free guide</button>
           </div>
         </section>
 
-        <!-- Section about blogs -->
+        <!-- Section about blog articles -->
         <section class="our_blogs">
+          <div class="container pt-110">
+            <h4 class="grey uppercase fw-500 mb-30 text-center fs-14 letter-1-5">read for more joyment</h4>
+            <h2 class="almost-black fs-40 capitalize text-center mb-75">latest from <span class="aqua-green fw-400">our blogs</span></h2>
+            <div class="blog_cards_container d-flex ">
 
+              <div class="card" v-for="article in blogsArticles">
+
+                <div class="img_container">
+                  <img :src="'assets/img/' + article.img" alt="">
+                </div>
+
+                <h4 class="grey uppercase fw-500 mb-15 mt-30 fs-14 letter-1-5">{{article.blogTheme}}</h4>
+                <h3 class="capitalize almost-black mb-30">{{article.title}}</h3>
+                <div class="date_views">
+                  <span class="grey"> <i class="far fa-calendar mr-7"></i> {{article.date}} <i class="far fa-eye ml-30 mr-7"></i> {{article.views}} views</span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
         </section>
 
         <!-- Newsletter -->
