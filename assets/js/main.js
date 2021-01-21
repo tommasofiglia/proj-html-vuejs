@@ -146,7 +146,7 @@ let app = new Vue({
     ],
     counterDots: "",
     positionDotHorizontal: 0,
-    positionDotVertical: 0
+    positionDotVertical: 0,
   },
   methods:{
     slideHorizontal(index, id){
@@ -182,6 +182,13 @@ let app = new Vue({
         });
       };
 
+    },
+    scrollToTop(){
+      document.documentElement.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      console.log("funziona?");
     }
   },
   mounted(){

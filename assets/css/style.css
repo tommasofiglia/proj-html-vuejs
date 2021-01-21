@@ -513,7 +513,6 @@ nav{
   transition: box-shadow 0.8s ease;
 }
 
-
 .courses_carousel .card img{
   width: 100%;
   border-top-left-radius: 7px;
@@ -870,6 +869,24 @@ footer .social a:hover{
   color: white;
 }
 
+/* Button to scroll to top */
+.button_scroll_top{
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  background-color: #1fad95;
+  color: white;
+  font-size: 25px;
+  border-radius: 50%;
+  position: fixed;
+  right: 2%;
+  top: 88%;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+  z-index: 3;
+}
+
 /********************************
 MEDIAQUERIES
 *******************************/
@@ -895,5 +912,15 @@ MEDIAQUERIES
     left: 92%;
     top: -5.5%;
     z-index: 1;
+  }
+
+  .button_scroll_top{
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 50%;
+    right: 1.5%;
+    top: 88%;
+    line-height: 60px;
   }
 }
