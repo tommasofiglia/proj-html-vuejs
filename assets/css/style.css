@@ -365,6 +365,15 @@ nav{
 
 /* Features section */
 
+.img_over_features{
+  position: absolute;
+  width: 190px;
+  border-radius: 7px;
+  left: 92%;
+  top: -8%;
+  z-index: 1;
+}
+
 .features{
   padding-top: 200px;
 }
@@ -866,5 +875,14 @@ MEDIAQUERIES
   .links ul li{
     margin-left: 22px;
     font-size: 13px;
+  }
+
+  .img_over_features{
+    position: absolute;
+    width: 130px;
+    border-radius: 7px;
+    left: 92%;
+    top: -5.5%;
+    z-index: 1;
   }
 }
