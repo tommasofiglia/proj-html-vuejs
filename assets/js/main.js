@@ -114,7 +114,7 @@ let app = new Vue({
       {
         img: "artist3.jpg",
         blogTheme: "artist",
-        title: "connection between self-portraits and identity",
+        title: "connection between self-Portraits and identity",
         date: "May 15, 2020",
         views: "397"
       }

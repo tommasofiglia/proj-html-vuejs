@@ -664,6 +664,7 @@ nav{
   border-radius: 7px;
   cursor: pointer;
   margin-top: 35px;
+  transition: background-color 0.3s ease;
 }
 
 .transform_you button:hover{
@@ -705,6 +706,8 @@ nav{
 
 .our_blogs .card h3{
   transition: color 0.3s ease;
+  line-height: 1.7em;
+  font-size: 20px;
 }
 
 .our_blogs .card span{
@@ -750,6 +753,7 @@ nav{
   border-bottom-right-radius: 5px;
   line-height: 57px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .newsletter_container .button:hover{
