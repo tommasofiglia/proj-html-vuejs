@@ -641,6 +641,10 @@ nav{
   margin-bottom: 120px;
 }
 
+.review_cards::-webkit-scrollbar{
+  display: none;
+}
+
 .review_cards .card{
   border-radius: 7px;
   width: 95%;
